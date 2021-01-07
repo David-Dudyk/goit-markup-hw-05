@@ -350,32 +350,27 @@ nav a.active,
   margin-right: 30px;
 }
 
-.thumb {
+
+
+.what-we-do li {
   position: relative;
-  margin: 0px;
-  
-
-  overflow: hidden;
-  background-color: var(--secondary-title-color);
-
 }
-  
 
-.label {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  margin: 0;
-  padding: 27px 83px;
+.what-we-do li .label {
+  background: rgba(47, 48, 58, 0.8);
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--secondary-title-color);
-  background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 /* team */
