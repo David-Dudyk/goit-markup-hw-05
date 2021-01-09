@@ -306,10 +306,6 @@ nav a.active,
   
 }
 
-.modal-buttonfos {
-  focus: none;
-}
-
 
 .backdrop {
   position: absolute;
@@ -335,8 +331,30 @@ nav a.active,
   min-height: 581px;
   min-width: 528px;
   border-radius: 4px;
+ 
+ 
   background-color: #fff;
 }
+
+.close { /* тут остановился 09 01 2021*/
+  display: flex;
+  justify-content: right;
+  align-items: top;
+}
+
+.modal-style {
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+ 
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 
