@@ -538,15 +538,36 @@ nav a.active,
 }
 
 
-.images-wrapper:hover::before {
+
+
+.image-wrapper:hover::before {
   opacity: 1;
 }
 
-.images-wrapper {
+
+
+.image-wrapper {
   position: relative;
+  align-items: center;
 }
 
-.images-wrapper::before {
+.image-wrapper p {
+  position: absolute;
+  margin: 63px 24px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-color);
+  opacity: 0;
+}
+ 
+.action:hover .image-wrapper p {
+ opacity: 1;
+}
+
+
+.image-wrapper::before {
   display: inline-block;
   position: absolute;
   content: '';
