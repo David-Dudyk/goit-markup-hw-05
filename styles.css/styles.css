@@ -299,12 +299,11 @@ nav a.active,
 /* модальное окно */
 
 .modal-button {
+  width: 200px;
+  height: 50px;
   background-color: var(--accent-color);
   color: #fff;
   margin: 0;
-  border: 0px;
-  width: 200px;
-  height: 50px;
   padding: 0px;
   
 }
@@ -327,28 +326,30 @@ nav a.active,
 
 
 .modal {
-  /* position: absolute; */
+  position: absolute; 
   padding: 0px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-height: 581px;
   min-width: 528px;
-  /* border-radius: 4px; */
+  border-radius: 4px;
   background-color: #fff;
 }
 
-/* .close { /* тут остановился 09 01 2021
-  float: right;
-} */
+
 
 .modal-style {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0%;
+  margin: 8px;
   display: flex;
   float: right;
   justify-content: center;
   align-items: center; 
-  width: 30px;
-  height: 30px;
+
   background-color: #ffffff;
 }
 
