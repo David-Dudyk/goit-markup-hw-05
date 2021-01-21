@@ -692,17 +692,23 @@ nav a.active,
 footer {
   background-color: var(--accent-background);
   font-family: var(--primary-font-family);
-  
-
   padding: 60px 0px 60px 0px;
 }
 
 footer .container {
   display: flex;
   align-items: baseline;
-  
-  
 }
+
+
+footer .container:last-child li{
+  margin-top: 9px;
+}
+
+footer .footer-social-links:last-child li{
+  margin-top: 0px;
+}
+
 
 footer address {
   font-style: normal;
@@ -716,6 +722,12 @@ footer .container li {
   align-items: baseline;
   margin-top: 9px;
 }
+
+
+
+
+
+
 
 footer .logo {
   display: flex;
@@ -755,7 +767,7 @@ footer a {
   letter-spacing: 0.03em;
   color: var(--footer-contaks-color);
 
-  margin-top: 9px;
+  
 }
 
 .footer-networks {
@@ -775,11 +787,13 @@ footer a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 
 
 /* footer-social */
+
 
 
 .footer-social-links {
@@ -788,16 +802,13 @@ footer a {
   margin: 0px;
 }
 
+
 .footer-social-links a {
   margin: 0px;
   background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social-links li {
-  margin: 0;
-  padding: 0px;
-  border: 0px;
-}
+
 .footer-social-links li:not(:last-child) {
   margin-right: 10px;
 }
