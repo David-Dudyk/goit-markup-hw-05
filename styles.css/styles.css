@@ -578,9 +578,9 @@ nav a.active,
    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px
    rgba(0, 0, 0, 0.16);
 }
-/*.direction-container a:focus {
+.direction-container a:focus {
   outline : none;
-}*/
+}
 
 
 
