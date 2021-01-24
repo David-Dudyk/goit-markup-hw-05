@@ -374,13 +374,17 @@ nav a.active,
   align-items: center; 
 
   background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  
 }
 
-.modal-style:hover,
-.modal-style:focus {
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
+
+.modal-style:active,
+.modal-style:focus,
+.modal-style:hover {
+  background-color: #ffffff;
+
+} 
 
 
 
