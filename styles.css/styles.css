@@ -205,7 +205,7 @@ nav a {
   display: flex;
 }
 
-.header-nav a::after{
+.header-nav a.active::after{
   content: '';
   position: absolute;
   left: 0;
@@ -217,14 +217,10 @@ nav a {
   background-color: var(--accent-color);
   border-radius: 2px;
 
-  transform: scaleX(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+ 
 }
 
-.header-nav a:hover::after {
-transform: scaleX(1);
-}
+
 
 
 .email {
@@ -650,7 +646,7 @@ nav a.active,
 
 
 .image-wrapper:hover .overlay-direction {
-  transform: translatex(0);
+  transform: translateY(0);
 }
 
 .overlay-direction {
@@ -661,8 +657,10 @@ nav a.active,
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translatex(-100%);
-  transition: transform 250ms ease;
+  transition-property: transform;
+  transform: translateY(-100%);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms;
 }
 
 .overlay-direction > p {
@@ -675,21 +673,6 @@ nav a.active,
   color: var(--secondary-title-color);
   opacity: 1;
 }
-
-
-
-/* .action {
-  position: relative;
-} 
-
- 
-.action:hover .image-wrapper p {
- opacity: 1;
-} */
-
-
-
-
 
 
 
